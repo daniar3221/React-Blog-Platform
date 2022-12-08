@@ -1,0 +1,121 @@
+.create-article-form{
+    background-color: #fff;
+    width: 80%;
+    margin: 30px auto;
+    padding: 48px 32px;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 22px 106px rgba(0, 0, 0, 0.07), 
+    0px 9.19107px 44.2843px rgba(0, 0, 0, 0.0503198), 
+    0px 4.91399px 23.6765px rgba(0, 0, 0, 0.0417275), 
+    0px 2.75474px 13.2728px rgba(0, 0, 0, 0.035), 
+    0px 1.46302px 7.04911px rgba(0, 0, 0, 0.0282725), 
+    0px 0.608796px 2.93329px rgba(0, 0, 0, 0.0196802);
+    border-radius: 6px;
+}
+
+.title-block, .text-block, .desc-block{
+    margin-bottom: 21px;
+}
+
+.create-article-form h2{
+    text-align: center;
+}
+
+.create-article-form label{
+    font-size: 14px;
+}
+
+.create-article-form .tag input{
+    width: 320px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    outline: none;
+}
+
+.create-article-form .delete-tag:enabled{
+    padding: 7px 40px;
+    background-color: inherit;
+    border: 2px solid red;
+    color: red;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+.create-article-form .delete-tag:disabled{
+    padding: 7px 40px;
+    background-color: rgba(234, 234, 234, 0.722);
+    border: 2px solid rgb(161, 161, 161);
+    color: rgb(161, 161, 161);
+    font-weight: 500;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+
+.create-article-form .add-tag:enabled{
+    padding: 7px 35px;
+    background-color: inherit;
+    border: 2px solid rgb(48, 121, 255);
+    color: rgb(48, 121, 255);
+    font-weight: 500;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.create-article-form .add-tag:disabled{
+    padding: 7px 35px;
+    background-color: rgba(234, 234, 234, 0.722);
+    border: 2px solid rgb(161, 161, 161);
+    color: rgb(161, 161, 161);
+    font-weight: 500;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.create-article-form .tag input{
+    width: 320px;
+}
+
+#desc, #text, #title{
+    width: 100%;
+    outline: none;
+    border: 1px solid #D9D9D9;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size   : 15px;
+}
+
+#text{
+    resize: none;
+    min-height: 130px;
+}
+.send-article{
+    background-color: #1890FF;
+    margin-top: 21px;
+    width: 320px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.send-article:disabled{
+    background-color: #188fffc9;
+}
+
+.send-article:hover{
+    background-color: #45a3fa;
+   
+}

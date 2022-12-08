@@ -1,0 +1,49 @@
+.sign-in-form{
+    background-color: #fff;
+    max-width: 320px;
+    margin: 60px auto;
+    padding: 38px 30px;
+}
+
+.sign-in-form h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.sign-in-form input{
+    display: block;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    padding: 8px 12px;
+    outline: none;
+    
+}
+
+.sign-in-form div{
+    margin-bottom: 15px;
+}
+
+.sign-in-form button{
+    width: 100%;
+    background: #1890FF;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.sign-in-form button:hover:enabled{
+    background: #45a5ff;
+}
+
+.sign-in-form button[disabled]{
+    background-color: #188fff75;
+}
+
+.sign-in-form p{
+    font-size: 12px;
+    text-align: center;
+}
