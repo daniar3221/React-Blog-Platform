@@ -1,15 +1,14 @@
+/* eslint-disable new-cap */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import './createArticlePage.css';
 import {TagBox} from '../../components/tagBox';
 import {WithArticle} from '../../components/HOC/withArticle';
 
-
-const CreateArticlePage = ({
+function EditArticlePage({
   addTag,
   onDeleteTag,
   onChangeTagValue,
-  onSubmitCreate,
+  onSubmitEdit,
   onTextChange,
   onDescChange,
   onTitleChange,
@@ -25,54 +24,58 @@ const CreateArticlePage = ({
   descError,
   textError,
   tagError,
-}) => {
+  isUserLoggedIn,
+}) {
   return (
-    <div className='create-article-page'>
-      <form className='create-article-form' onSubmit={onSubmitCreate}>
-        <h2>Create new article</h2>
+    <div className="create-article-page">
+      <form className="create-article-form" onSubmit={onSubmitEdit}>
+        <h2>Edit new article</h2>
 
-        <div className='title-block'>
+        <div className="title-block">
           <label htmlFor="title">Title</label>
-          <input id='title'
+          <input
+            id="title"
             value={title}
             onChange={onTitleChange}
             onBlur={blurHandler}
-            name='title'
-            placeholder='Title'
+            name="title"
+            placeholder="Title"
             type="text"
-            required />
+          />
           {(titleDirty && titleError) && <div style={{color: 'red'}}>{titleError}</div>}
         </div>
 
-        <div className='desc-block'>
+        <div className="desc-block">
           <label htmlFor="desc">Short description</label>
-          <input id='desc'
+          <input
+            id="desc"
             value={desc}
             onBlur={blurHandler}
             onChange={onDescChange}
-            name='desc'
-            placeholder='Description'
+            name="desc"
+            placeholder="Description"
             type="text"
-            required />
+          />
           {(descDirty && descError) && <div style={{color: 'red'}}>{descError}</div>}
         </div>
 
-        <div className='text-block'>
+        <div className="text-block">
           <label htmlFor="text">Text</label>
-          <textarea id='text'
+          <textarea
+            id="text"
             value={text}
             onBlur={blurHandler}
             onChange={onTextChange}
-            name='text'
-            placeholder='Text'
-            required />
+            name="text"
+            placeholder="Text"
+          />
           {(textDirty && textError) && <div style={{color: 'red'}}>{textError}</div>}
         </div>
 
-        <div className='create-tags-block'>
+        <div className="create-tags-block">
           <h4>Tags</h4>
 
-          <div className='tags-container'>
+          <div className="tags-container">
             {tagList.map((tagValue, index) => (
               <TagBox
                 key={index}
@@ -85,20 +88,22 @@ const CreateArticlePage = ({
             ))}
             {tagError ? <p style={{color: 'red'}}>Tags shouldn't be empty</p> : null}
             <button
-              className='add-tag'
+              className="add-tag"
               onClick={(event) => {
                 event.preventDefault();
                 addTag(event);
-              }}>Add tag</button>
+              }}
+            >
+                            Add tag
+
+            </button>
           </div>
 
-
         </div>
-        <button className='send-article' onClick={onSubmitCreate}>Send</button>
+        <button className="send-article" onClick={onSubmitEdit}>Send</button>
       </form>
     </div>
   );
-};
+}
 
-// eslint-disable-next-line new-cap
-export default WithArticle(CreateArticlePage);
+export default WithArticle(EditArticlePage);

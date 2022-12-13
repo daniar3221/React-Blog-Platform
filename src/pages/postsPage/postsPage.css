@@ -12,17 +12,36 @@
     0px 2.75474px 13.2728px rgba(0, 0, 0, 0.035), 
     0px 1.46302px 7.04911px rgba(0, 0, 0, 0.0282725), 
     0px 0.608796px 2.93329px rgba(0, 0, 0, 0.0196802);
+    overflow-wrap: anywhere
   }
   .post-header{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+     
+  }
+
+  .post-header__info{
+    width: 70%;
+    overflow-wrap:anywhere;
+  }
+
+  .post-header__wrapper{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .post-header__likes{
+    display: flex;
+    align-items: center;
   }
   .post-header h1{
-    display: inline-block;
+
     color: #1890FF;
     font-size: 20px;
     margin-right: 13px;
     margin-bottom: 0;
+    /* overflow-wrap: break-word; */
   }
   .post-header button{
     border: none;
@@ -42,6 +61,7 @@
     display: flex;
     justify-content: space-between;
     width: 150px;
+    text-align: end;
   }
   .post-header__user p{
     font-size: 12px;
@@ -59,11 +79,14 @@
   
   .post-tag-list{
     display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
     color: rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
   
   }
   .post-tag-list div{
-    margin-right: 5px;
+   
     padding: 2px 5px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 2px;
@@ -73,6 +96,7 @@
   .post-text{
     font-size: 12px;
     color: rgba(0, 0, 0, 0.75);
+    
   }
   
   .post-text ol, .post-text ul{

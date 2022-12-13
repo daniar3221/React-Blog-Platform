@@ -1,4 +1,31 @@
 
+.post .edit-btn{
+    color: #52C41A;
+    border: 1px solid #52C41A;
+    border-radius: 5px;
+    padding: 3px 19px;
+    font-weight: 500;
+}
+
+.post .edit-btn:hover{
+  background-color: #52C41A;
+  color: white;
+  
+}
+
+.post .delete-btn{
+  color: #F5222D;
+  border: 1px solid #F5222D;
+  border-radius: 5px;
+  padding: 3px 19px;
+  font-weight: 500;
+}
+
+.post .delete-btn:hover{
+  background-color: #F5222D;
+  color: white;
+}
+
 .post-description{
     margin-top: 5px;
     font-size: 12px;
@@ -6,4 +33,14 @@
   }
   .single-blog-page .post-text {
     font-size: 20px;
+  }
+
+  .post-header_user{
+    display: flex;
+  }
+
+  .post-header_user img{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
   }
