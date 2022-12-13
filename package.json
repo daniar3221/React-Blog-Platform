@@ -23,7 +23,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends":[
+    "extends": [
       "react-app",
       "react-app/jest"
     ]
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-google": "^0.14.0",
     "uuid": "^9.0.0"
   }
 }
